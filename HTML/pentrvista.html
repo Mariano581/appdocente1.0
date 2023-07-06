@@ -109,23 +109,14 @@
                         <tr>
                             <th scope="col">Fecha</th>
                             <th scope="col">Alumno</th>
-                            <th scope="col">Curso</th>
-                            <th scope="col">Registro</th>
-                            <th scope="col">Tipo</th>
-                            <th scope="col">Motivo</th>
-                            <th scope="col">Ver</th>
-                            <th scope="col">Lectura</th>
+                            <th scope="col"></th>
                         </tr>
                     </thead>
                     <tbody class="text-center">
                         <tr>
                             <th scope="row">03/08/22</th>
                             <td>Robino Lucas</td>
-                            <td>1ro A</td>
-                            <td>Preceptor</td>
-                            <td>Pedagogico</td>
-                            <td>Conversar sobre materias bajas</td>
-                            <td>
+                            <th>
                                 <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
                                     <ion-icon name="eye-outline"></ion-icon></button>
                                 <!-- ios style-->
@@ -146,6 +137,10 @@
                                         <div class="notification-content">
                                             <div class="in">
                                                 <h3 class="subtitle">Acta</h3>
+                                                <h4 class="subtitle">Registro: Preceptor</h4>
+                                                <h4 class="subtitle">tipo: Pedagogico</h4>
+                                                <h4 class="subtitle">Curso: 1ro A</h4>
+                                                <h4 class="subtitle">Motivo: Conversar sobre materias bajas</h4>
                                                 <div class="text">
                                                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
                                                     Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
@@ -156,90 +151,163 @@
                                     </div>
                                 </div>
                                 <!-- * ios style -->
-                            </td>
-                            <td>03/07/2023 - 13:54:48</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">07/04/23</th>
-                            <td>Robino Lucas</td>
-                            <td>1ro A</td>
-                            <td>Preceptor</td>
-                            <td>Pedagogico</td>
-                            <td>Conversar sobre materias bajas</td>
-                            <td>
-                                <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
-                                    <ion-icon name="eye-outline"></ion-icon></button>
-                                <!-- ios style-->
-                                <div id="notification-7" class="notification-box">
-                                    <div class="notification-dialog ios-style">
-                                        <div class="notification-header">
-                                            <div class="in">
-                                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
-                                                <strong>Lucas Robino</strong>
+                            </th>
+                            <tr>
+                                <th scope="row">03/08/22</th>
+                                <td>Robino Lucas</td>
+                                <td>
+                                    <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
+                                        <ion-icon name="eye-outline"></ion-icon></button>
+                                    <!-- ios style-->
+                                    <div id="notification-7" class="notification-box">
+                                        <div class="notification-dialog ios-style">
+                                            <div class="notification-header">
+                                                <div class="in">
+                                                    <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
+                                                    <strong>Lucas Robino</strong>
+                                                </div>
+                                                <div class="right">
+                                                    <span>Entrevista</span>
+                                                    <a href="#" class="close-button">
+                                                        <ion-icon name="close-circle"></ion-icon>
+                                                    </a>
+                                                </div>
                                             </div>
-                                            <div class="right">
-                                                <span>Entrevista</span>
-                                                <a href="#" class="close-button">
-                                                    <ion-icon name="close-circle"></ion-icon>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="notification-content">
-                                            <div class="in">
-                                                <h3 class="subtitle">Acta</h3>
-                                                <div class="text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
-                                                    Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
-                                                    Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                            <div class="notification-content">
+                                                <div class="in">
+                                                    <h3 class="subtitle">Acta</h3>
+                                                    <h4 class="subtitle">Registro: Preceptor</h4>
+                                                    <h4 class="subtitle">tipo: Pedagogico</h4>
+                                                    <h4 class="subtitle">Curso: 1ro A</h4>
+                                                    <h4 class="subtitle">Motivo: Conversar sobre materias bajas</h4>
+                                                    <div class="text">
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
+                                                        Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
+                                                        Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <!-- * ios style -->
-                            </td>
-                            <td>03/07/2023 - 13:54:48</td>
-                        </tr>
-                        <tr>
-                            <th scope="row">03/07/22</th>
-                            <td>Robino Lucas</td>
-                            <td>1ro A</td>
-                            <td>Preceptor</td>
-                            <td>Pedagogico</td>
-                            <td>Conversar sobre materias bajas</td>
-                            <td>
-                                <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
-                                    <ion-icon name="eye-outline"></ion-icon></button>
-                                <!-- ios style-->
-                                <div id="notification-7" class="notification-box">
-                                    <div class="notification-dialog ios-style">
-                                        <div class="notification-header">
-                                            <div class="in">
-                                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
-                                                <strong>Lucas Robino</strong>
-                                            </div>
-                                            <div class="right">
-                                                <span>Entrevista</span>
-                                                <a href="#" class="close-button">
-                                                    <ion-icon name="close-circle"></ion-icon>
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <div class="notification-content">
-                                            <div class="in">
-                                                <h3 class="subtitle">Acta</h3>
-                                                <div class="text">
-                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
-                                                    Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
-                                                    Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                    <!-- * ios style -->
+                                </td>
+                                <tr>
+                                    <th scope="row">03/08/22</th>
+                                    <td>Robino Lucas</td>
+                                    <td>
+                                        <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
+                                            <ion-icon name="eye-outline"></ion-icon></button>
+                                        <!-- ios style-->
+                                        <div id="notification-7" class="notification-box">
+                                            <div class="notification-dialog ios-style">
+                                                <div class="notification-header">
+                                                    <div class="in">
+                                                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
+                                                        <strong>Lucas Robino</strong>
+                                                    </div>
+                                                    <div class="right">
+                                                        <span>Entrevista</span>
+                                                        <a href="#" class="close-button">
+                                                            <ion-icon name="close-circle"></ion-icon>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="notification-content">
+                                                    <div class="in">
+                                                        <h3 class="subtitle">Acta</h3>
+                                                        <h4 class="subtitle">Registro: Preceptor</h4>
+                                                        <h4 class="subtitle">tipo: Pedagogico</h4>
+                                                        <h4 class="subtitle">Curso: 1ro A</h4>
+                                                        <h4 class="subtitle">Motivo: Conversar sobre materias bajas</h4>
+                                                        <div class="text">
+                                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
+                                                            Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
+                                                            Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <!-- * ios style -->
-                            </td>
-                            <td>03/07/2023 - 13:54:48</td>
+                                        <!-- * ios style -->
+                                    </td>
+                                    <tr>
+                                        <th scope="row">03/08/22</th>
+                                        <td>Robino Lucas</td>
+                                        <td>
+                                            <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
+                                                <ion-icon name="eye-outline"></ion-icon></button>
+                                            <!-- ios style-->
+                                            <div id="notification-7" class="notification-box">
+                                                <div class="notification-dialog ios-style">
+                                                    <div class="notification-header">
+                                                        <div class="in">
+                                                            <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
+                                                            <strong>Lucas Robino</strong>
+                                                        </div>
+                                                        <div class="right">
+                                                            <span>Entrevista</span>
+                                                            <a href="#" class="close-button">
+                                                                <ion-icon name="close-circle"></ion-icon>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                    <div class="notification-content">
+                                                        <div class="in">
+                                                            <h3 class="subtitle">Acta</h3>
+                                                            <h4 class="subtitle">Registro: Preceptor</h4>
+                                                            <h4 class="subtitle">tipo: Pedagogico</h4>
+                                                            <h4 class="subtitle">Curso: 1ro A</h4>
+                                                            <h4 class="subtitle">Motivo: Conversar sobre materias bajas</h4>
+                                                            <div class="text">
+                                                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
+                                                                Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
+                                                                Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- * ios style -->
+                                        </td>
+                                        <tr>
+                                            <th scope="row">03/08/22</th>
+                                            <td>Robino Lucas</td>
+                                            <td>
+                                                <button type="button" class="btn btn-sm me-1 mb-1" onclick="notification('notification-7')">
+                                                    <ion-icon name="eye-outline"></ion-icon></button>
+                                                <!-- ios style-->
+                                                <div id="notification-7" class="notification-box">
+                                                    <div class="notification-dialog ios-style">
+                                                        <div class="notification-header">
+                                                            <div class="in">
+                                                                <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="imaged w24 rounded">
+                                                                <strong>Lucas Robino</strong>
+                                                            </div>
+                                                            <div class="right">
+                                                                <span>Entrevista</span>
+                                                                <a href="#" class="close-button">
+                                                                    <ion-icon name="close-circle"></ion-icon>
+                                                                </a>
+                                                            </div>
+                                                        </div>
+                                                        <div class="notification-content">
+                                                            <div class="in">
+                                                                <h3 class="subtitle">Acta</h3>
+                                                                <h4 class="subtitle">Registro: Preceptor</h4>
+                                                                <h4 class="subtitle">tipo: Pedagogico</h4>
+                                                                <h4 class="subtitle">Curso: 1ro A</h4>
+                                                                <h4 class="subtitle">Motivo: Conversar sobre materias bajas</h4>
+                                                                <div class="text">
+                                                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia fugit error atque enim! Amet commodi ad unde quisquam soluta ipsam ab non, iste tempore eveniet incidunt sint accusantium repudiandae ipsum!
+                                                                    Temporibus eos dolorum doloribus doloremque a nesciunt dolorem voluptatem facilis commodi rem. Ut obcaecati quaerat autem ducimus in soluta saepe ad illo nesciunt molestias, dicta dolore architecto repudiandae! Quibusdam, assumenda.
+                                                                    Molestiae corrupti unde perspiciatis itaque voluptatibus, obcaecati incidunt quibusdam dolor. Tenetur neque ex voluptatibus odit magnam consectetur esse, impedit quia aperiam adipisci ipsa enim provident saepe pariatur ratione amet quod.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- * ios style -->
+                                            </td>
                         </tr>
                     </tbody>
                 </table>
