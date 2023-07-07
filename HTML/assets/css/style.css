@@ -4434,7 +4434,7 @@ textarea,
   padding-bottom: env(safe-area-inset-bottom);
 }
 .chatFooter .form-group {
-  width: calc(100% - 100px);
+  width: calc(111% - 100px);
 }
 .chatFooter .form-group .form-control {
   font-size: 13px;
