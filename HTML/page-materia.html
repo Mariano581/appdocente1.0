@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#000000">
+    <title>Mobilekit Mobile UI Kit</title>
+    <meta name="description" content="Mobilekit HTML Mobile UI Kit">
+    <meta name="keywords" content="bootstrap 5, mobile template, cordova, phonegap, mobile, html" />
+    <link rel="icon" type="image/png" href="assets/img/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/img/icon/192x192.png">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="manifest" href="__manifest.json">
+</head>
+
+<body class="bg-white">
+
+    <!-- loader -->
+    <div id="loader">
+        <div class="spinner-border text-primary" role="status"></div>
+    </div>
+    <!-- * loader -->
+
+    <!-- App Header -->
+    <div class="appHeader bg-primary text-light">
+        <div class="left">
+            <a href="#" class="headerButton goBack">
+                <ion-icon name="chevron-back-outline"></ion-icon>
+            </a>
+        </div>
+        <div class="pageTitle">Materia</div>
+    </div>
+    <!-- * App Header -->
+
+    <!-- App Capsule -->
+    <div id="appCapsule">
+
+        <div class="section mt-2">
+            <div class="profile-head">
+                <div class="avatar">
+                </div>
+                <div class="in">
+                    <h3 class="name">Matemática</h3>
+                    <h5 class="subtext">1ro A - Secundaria Basica</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="section full mt-2">
+            <div class="profile-stats ps-2 pe-2">
+                <a href="#" class="item">
+                    <h5 class="subtext">Nº de Clases</h5>
+                    <strong>25</strong>
+                </a>
+                <a href="#" class="item">
+                    <h5 class="subtext">Nº de alumnos</h5>
+                    <strong>31</strong>
+                </a>
+                <a href="#" class="item">
+                    <h5 class="subtext">Nº de clases dada</h5>
+                    <strong>27</strong>
+                </a>
+                <a href="#" class="item">
+                    <h5 class="subtext">Clases que quedan</h5>
+                    <strong>33</strong>
+                </a>
+            </div>
+        </div>
+
+        
+        <div class="section full">
+            <div class="wide-block transparent p-0">
+                <ul class="nav nav-tabs lined iconed" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" data-bs-toggle="tab" href="#libro" role="tab">
+                            <ion-icon name="book-outline"></ion-icon>
+                            <h7 class="subtext">LIBRO DE TEMAS</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#parte" role="tab">
+                            <ion-icon name="id-card-outline"></ion-icon>
+                            <h7 class="subtext">PARTES ASISTENCIA</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#calificacion" role="tab">
+                            <ion-icon name="logo-react"></ion-icon>
+                            <h7 class="subtext">CALIFICACIONES</h7>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="tab" href="#alumno" role="tab">
+                            <ion-icon name="person-outline"></ion-icon>
+                            <h7 class="subtext">ALUMNOS</h7>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- tab content -->
+        <div class="section full mb-2">
+            <div class="tab-content">
+
+                <!-- Libro de temas -->
+                <div class="tab-pane fade show active" id="libro" role="tabpanel">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Clase</th>
+                                <th scope="col">Fecha</th>
+                                <th scope="col">Tipo de clases</th>
+                                <th scope="col">Contenido</th>
+                                <th scope="col">Actividades</th>
+                                <th scope="col">Alumnos</th>
+                                <th scope="col">Editar</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">1</td>
+                                <td class="align-middle">11/04/2023</td>
+                                <td class="align-middle">Diagnostico</td>
+                                <td class="align-middle">Los Mayas</td>
+                                <td class="align-middle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste, ab!</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        +
+                                    </button>
+                                    <!-- Content Action Sheet -->
+                                    <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetContent">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Tipo</h5>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="action-sheet-content">
+                                                <div class="form-group boxed">
+                                                    <div class="input-wrapper">
+                                                        <input type="text" class="form-control form-control-sm w-50 mx-auto" id="texto" placeholder="" autocomplete="">
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-block" data-bs-dismiss="offcanvas">Guardar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- * Content Action Sheet -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">2</td>
+                                <td class="align-middle">11/04/2023</td>
+                                <td class="align-middle">Revision</td>
+                                <td class="align-middle">Presentacion</td>
+                                <td class="align-middle">Debate</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        +
+                                    </button>
+                                    <!-- Content Action Sheet -->
+                                    <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetContent">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Tipo</h5>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="action-sheet-content">
+                                                <div class="form-group boxed">
+                                                    <div class="input-wrapper">
+                                                        <input type="text" class="form-control form-control-sm w-50 mx-auto" id="texto" placeholder="" autocomplete="">
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-block" data-bs-dismiss="offcanvas">Guardar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- * Content Action Sheet -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">3</td>
+                                <td class="align-middle">11/04/2023</td>
+                                <td class="align-middle">Feriado</td>
+                                <td class="align-middle">0.75</td>
+                                <td class="align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus, non?</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        +
+                                    </button>
+                                    <!-- Content Action Sheet -->
+                                    <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetContent">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Tipo</h5>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="action-sheet-content">
+                                                <div class="form-group boxed">
+                                                    <div class="input-wrapper">
+                                                        <input type="text" class="form-control form-control-sm w-50 mx-auto" id="texto" placeholder="" autocomplete="">
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-block" data-bs-dismiss="offcanvas">Guardar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- * Content Action Sheet -->
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">4</td>
+                                <td class="align-middle">11/04/2023</td>
+                                <td class="align-middle">Ausente</td>
+                                <td class="align-middle">Licencia por Enfermedad</td>
+                                <td class="align-middle"></td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="people-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        +
+                                    </button>
+                                    <!-- Content Action Sheet -->
+                                    <div class="offcanvas offcanvas-bottom action-sheet" tabindex="-1" id="actionSheetContent">
+                                        <div class="offcanvas-header">
+                                            <h5 class="offcanvas-title">Tipo</h5>
+                                        </div>
+                                        <div class="offcanvas-body">
+                                            <div class="action-sheet-content">
+                                                <div class="form-group boxed">
+                                                    <div class="input-wrapper">
+                                                        <input type="text" class="form-control form-control-sm w-50 mx-auto" id="texto" placeholder="" autocomplete="">
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-primary btn-block" data-bs-dismiss="offcanvas">Guardar</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- * Content Action Sheet -->
+                                </td>
+                            </tr>
+                            <!-- ... Repite el mismo patrón para los otros alumnos ... -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- * fin de libro de temas -->
+
+                <!--  Partes de asistencias -->
+                <div class="tab-pane fade" id="parte" role="tabpanel">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">Nº PARTE</th>
+                                <th scope="col">FECHA</th>
+                                <th scope="col">VER</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">23</td>
+                                <td class="align-middle">11/4/2024</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">44</td>
+                                <td class="align-middle">23/6/2024</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">78</td>
+                                <td class="align-middle">28/11/2024</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- ... Repite el mismo patrón ... -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- * Fin Partes de asistencias -->
+                <!-- Calificaciones -->
+                <div class="tab-pane fade" id="calificacion" role="tabpanel">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">INSTRUMENTO</th>
+                                <th scope="col">PENDIENTES</th>
+                                <th scope="col">EDITAR</th>
+                                <th scope="col">ELIMINAR</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">Argentina-relieve</td>
+                                <td class="align-middle">11</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Argentina-clima</td>
+                                <td class="align-middle">2</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Argentina-fauna</td>
+                                <td class="align-middle">5</td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="enter-outline"></ion-icon>
+                                    </button>
+                                </td>
+                                <td class="align-middle">
+                                    <button type="button" class="btn btn-icon btn-sm btn-primary" data-bs-toggle="offcanvas" data-bs-target="#actionSheetContent">
+                                        <ion-icon name="trash-outline"></ion-icon>
+                                    </button>
+                                </td>
+                            </tr>
+                            <!-- ... Repite el mismo patrón ... -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- * Fin de Calificaciones -->
+                <!-- Alumnos -->
+                <div class="tab-pane fade" id="alumno" role="tabpanel">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">APELLIDO</th>
+                                <th scope="col">NOMBRE</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="align-middle">Martinez</td>
+                                <td class="align-middle">Santiago</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Robino</td>
+                                <td class="align-middle">Lucas</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Mendoza</td>
+                                <td class="align-middle">Diego</td>
+                            </tr>
+                            <tr>
+                                <td class="align-middle">Vaccaro</td>
+                                <td class="align-middle">Mariano</td>
+                            </tr>
+                            <!-- ... Repite el mismo patrón ... -->
+                        </tbody>
+                    </table>
+                </div>
+                <!-- * Fin de Alumnos -->
+            </div>
+        </div>
+        <!-- * tab content -->
+
+    </div>
+    <!-- * App Capsule -->
+
+    <!-- App Bottom Menu -->
+    <div class="appBottomMenu">
+        <a href="index.html" class="item">
+            <div class="col">
+                <ion-icon name="home-outline"></ion-icon>
+                <strong>Home</strong>
+            </div>
+        </a>
+        <a href="./comunicados.html" class="item active">
+            <div class="col">
+                <ion-icon name="mail-outline"></ion-icon>
+                <strong>Comunicados</strong>
+            </div>
+        </a>
+        <a href="page-chat.html" class="item">
+            <div class="col">
+                <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                <strong>Mensajeria</strong>
+                <span class="badge badge-danger">5</span>
+            </div>
+        </a>
+        <a href="#sidebarPanel" class="item" data-bs-toggle="offcanvas">
+            <div class="col">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </a>
+    </div>
+    <!-- * App Bottom Menu -->
+
+    <!-- App Sidebar -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarPanel">
+        <div class="offcanvas-body">
+            <!-- profile box -->
+            <div class="profileBox">
+                <div class="image-wrapper">
+                    <img src="assets/img/sample/avatar/avatar1.jpg" alt="image" class="imaged rounded">
+                </div>
+                <div class="in">
+                    <strong>Julian Gruber</strong>
+                    <div class="text-muted">
+                        <ion-icon name="location"></ion-icon>
+                        California
+                    </div>
+                </div>
+                <a href="#" class="close-sidebar-button" data-bs-dismiss="offcanvas">
+                    <ion-icon name="close"></ion-icon>
+                </a>
+            </div>
+            <!-- * profile box -->
+
+            <ul class="listview flush transparent no-line image-listview mt-2">
+                <li>
+                    <a href="index.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            Discover
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-components.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="cube-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            Components
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="app-pages.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="layers-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>Pages</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="chatbubble-ellipses-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>Chat</div>
+                            <span class="badge badge-danger">5</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <div class="item">
+                        <div class="icon-box bg-primary">
+                            <ion-icon name="moon-outline"></ion-icon>
+                        </div>
+                        <div class="in">
+                            <div>Dark Mode</div>
+                            <div class="form-check form-switch">
+                                <input class="form-check-input dark-mode-switch" type="checkbox" id="darkmodesidebar">
+                                <label class="form-check-label" for="darkmodesidebar"></label>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+
+            <div class="listview-title mt-2 mb-1">
+                <span>Friends</span>
+            </div>
+            <ul class="listview image-listview flush transparent no-line">
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar7.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>Sophie Asveld</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar3.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>Sebastian Bennett</div>
+                            <span class="badge badge-danger">6</span>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar10.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>Beth Murphy</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar2.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>Amelia Cabal</div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="page-chat.html" class="item">
+                        <img src="assets/img/sample/avatar/avatar5.jpg" alt="image" class="image">
+                        <div class="in">
+                            <div>Henry Doe</div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- sidebar buttons -->
+        <div class="sidebar-buttons">
+            <a href="#" class="button">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="archive-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="settings-outline"></ion-icon>
+            </a>
+            <a href="#" class="button">
+                <ion-icon name="log-out-outline"></ion-icon>
+            </a>
+        </div>
+        <!-- * sidebar buttons -->
+    </div>
+    <!-- * App Sidebar -->
+
+    <!-- ============== Js Files ==============  -->
+    <!-- Bootstrap -->
+    <script src="assets/js/lib/bootstrap.min.js"></script>
+    <!-- Ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <!-- Splide -->
+    <script src="assets/js/plugins/splide/splide.min.js"></script>
+    <!-- ProgressBar js -->
+    <script src="assets/js/plugins/progressbar-js/progressbar.min.js"></script>
+    <!-- Base Js File -->
+    <script src="assets/js/base.js"></script>
+
+</body>
+
+</html>
